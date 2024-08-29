@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    font-family: "Outfit", sans-serif;
+    color: var(--Soft-blue);
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-dark-blue-card-BG);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    gap: 1.2rem;
+}
+
+.image img {
+    max-width: 260px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--White);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day div {
+    display: flex;
+    gap: 10px;
+    font-weight: 300;
+}
+
+.day > div:nth-child(1) {
+    color: var(--Cyan);
+}
+
+hr {
+    color: var(--Soft-blue);
+    height: 1px;
+}
+
+.footer {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+}
+
+.footer img {
+    max-width: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+}
+
+strong {
+    margin-left: 5px;
+    color: #fff;
+    font-weight: 200;
+}
